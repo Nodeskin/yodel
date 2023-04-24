@@ -106,7 +106,7 @@
                 /* TRACKING DETAILS  */
 
 .background-image {
-  background-image: url(/yodel_background.jpg);
+  background-image: url('./yodel_background.jpg');
   height: 100%;
   position: absolute;
   top: 0px;
