@@ -3,22 +3,20 @@
 }
 
 .main-container {
-
 }
 
-                /* NAV1 */
+/* NAV1 */
 
 .nav1-container {
   display: flex;
   justify-content: space-between;
   background-color: #000;
   width: 100%;
-  padding:0 20px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  
 }
 
 .nav1-left span {
@@ -39,7 +37,7 @@
   padding: 10px;
 }
 
-            /* NAV2 */
+/* NAV2 */
 .nav2-container {
   margin: 5px 0 10px;
   padding: 0 20px;
@@ -78,35 +76,34 @@
   position: unset !important;
 }
 
-.line{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    }
-    
-    .line:after{
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color:lime;
-    transform-origin:bottom right ;
-    transition: transform 0.25s ease-out;
-    
-    }
-    
-    .line:hover:after{
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+.line {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
 
-                /* TRACKING DETAILS  */
+.line:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: lime;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.line:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* TRACKING DETAILS  */
 
 .background-image {
-  background-image: url('./yodel_background.jpg');
+  background-image: url("./yodel_background.jpg");
   height: 100%;
   position: absolute;
   top: 0px;
@@ -160,34 +157,30 @@
   background-color: rgb(36, 33, 33);
   color: white;
   padding: 15px 10px;
-  font-size: 17px;
+  font-size: 14px;
   width: 28%;
   font-weight: 900;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-
-            /* ABOUT YODEL */
+/* ABOUT YODEL */
 .about-container {
-    background-color: rgb(241, 241, 234);
-    margin-top: 100px;
-    width: 100%;
+  background-color: rgb(241, 241, 234);
+  margin-top: 100px;
+  width: 100%;
 }
 
-.about-container h2{
-    font-size: 40px;
-    font-family: serif;
-    text-align: center;
-    padding: 30px 0;
+.about-container h2 {
+  font-size: 40px;
+  font-family: serif;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .about-yodel {
   display: flex;
   justify-content: space-evenly;
-  
 }
 .yodel-info {
-  border: 1px solid blue;
   width: 30%;
   height: 330px;
   align-items: center;
@@ -198,117 +191,110 @@
   font-size: 18px;
   padding: 25px;
   color: white;
-  background-color: rgb(21, 21, 136);
+  background-color: #0D2D6C;
 }
 
-.yodel-info button{
-    width: 80%;
-    padding: 18px;
-    color: white;
-    background-color: unset;
-    border: 1px solid white;
-    font-size: 18px;
-    
+.yodel-info button {
+  width: 80%;
+  padding: 18px;
+  color: white;
+  background-color: unset;
+  border: 1px solid white;
+  font-size: 18px;
 }
 
-            /* HOW TO TRACK */
-.faq-container{
-background-color: #fff;
+/* HOW TO TRACK */
+.faq-container {
+  background-color: #fff;
 }
 
-.question{
-padding: 10px 40px;
-font-size: 20px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+.question {
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .question p {
-    font-size: 17px;
-font-family: sans-serif
+  font-size: 17px;
+  font-family: sans-serif;
 }
 
-.question button{
-    padding: 20px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: rgb(166, 233, 9);
-    border: none;
-} 
-
-.safe-places{
-list-style: none;
-
+.question button {
+  padding: 20px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(166, 233, 9);
+  border: none;
 }
 
-.safe-places li::before{
-content: "\2022";
-color: rgb(166, 233, 9);
-font-weight: bolder;
-display: inline-block;
-width: 1rem;
-margin-left: -1rem;
+.safe-places {
+  list-style: none;
 }
 
-
-
-            /* CONTACT US */
-.contactUs-container{
-background-color: #03021b;
-margin-top: 60px;
+.safe-places li::before {
+  content: "\2022";
+  color: rgb(166, 233, 9);
+  font-weight: bolder;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
-.contact-box{
-display: flex;
-justify-content: space-around;
-
+/* CONTACT US */
+.contactUs-container {
+  background-color: #03021b;
+  margin-top: 60px;
 }
 
-.contact-ul{
-color: white;
-list-style: none;
-font-family: sans-serif;
-font-size: 14px;
-
+.contact-box {
+  display: flex;
+  justify-content: space-around;
 }
 
-.contact-ul li{
-margin-top: 15px;
+.contact-ul {
+  color: white;
+  list-style: none;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
-.about-us-top{
-    font-weight: 600;
-    font-size: 18px;
-    padding: 20px 0 20px;
+.contact-ul li {
+  margin-top: 15px;
 }
 
-.footer-box{
-display: flex;
-flex-direction: column;
+.about-us-top {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 0 20px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    
+  display: flex;
+  flex-direction: row;
 }
 
-.footer p{
-    display: flex;
-    font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 90px;
-    color: #fff;
+.footer p {
+  display: flex;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 90px;
+  color: #fff;
 }
 
-.footer-p1{
-width: 15%;
-font-weight: 700; 
+.footer-p1 {
+  width: 15%;
+  font-weight: 700;
 }
 
-.copy-right-p{
-    text-align: right;
-    padding: 20px;
-    font-size: 13px;
-    color: #fff;
+.copy-right-p {
+  text-align: right;
+  padding: 20px;
+  font-size: 13px;
+  color: #fff;
 }
