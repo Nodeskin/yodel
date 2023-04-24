@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+
+}
+
+                /* NAV1 */
+
+.nav1-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  width: 100%;
+  padding:0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  
+}
+
+.nav1-left span {
+  margin: 0 10px;
+}
+
+.person-ul {
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
+}
+
+.search-butt {
+  margin-right: 25px;
+  padding: 10px;
+}
+
+            /* NAV2 */
+.nav2-container {
+  margin: 5px 0 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 999;
+}
+
+.top-right-nav2 {
+  display: flex;
+  align-items: center;
+}
+
+.nav2-right {
+  display: flex;
+  list-style: none;
+}
+
+.top-right-nav2 span {
+  margin: 0 10px 0 5px;
+}
+
+.top-right-nav2 {
+  margin-right: 12px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.fa-li {
+  position: unset !important;
+}
+
+.line{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    }
+    
+    .line:after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color:lime;
+    transform-origin:bottom right ;
+    transition: transform 0.25s ease-out;
+    
+    }
+    
+    .line:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+                /* TRACKING DETAILS  */
+
+.background-image {
+  background-image: url(/yodel_background.jpg);
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(65%);
+  z-index: -1;
+}
+
+.pg1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 200px;
+}
+
+.pg1-container h1 {
+  font-size: 80px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.pg1-container p {
+  font-size: 18px;
+}
+
+.pg1-input-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.pg1-inputs {
+  padding: 15px 10px;
+  font-size: 18px;
+  width: 30%;
+}
+
+.pg1-inputs p {
+  font-size: 20px;
+}
+
+.pg1-input-wrap input:nth-child(3) {
+  background-color: rgb(166, 233, 9);
+}
+
+.pg1-inputs-b {
+  background-color: rgb(36, 33, 33);
+  color: white;
+  padding: 15px 10px;
+  font-size: 17px;
+  width: 28%;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+            /* ABOUT YODEL */
+.about-container {
+    background-color: rgb(241, 241, 234);
+    margin-top: 100px;
+    width: 100%;
+}
+
+.about-container h2{
+    font-size: 40px;
+    font-family: serif;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.about-yodel {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.yodel-info {
+  border: 1px solid blue;
+  width: 30%;
+  height: 330px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 25px;
+  color: white;
+  background-color: rgb(21, 21, 136);
+}
+
+.yodel-info button{
+    width: 80%;
+    padding: 18px;
+    color: white;
+    background-color: unset;
+    border: 1px solid white;
+    font-size: 18px;
+    
+}
+
+            /* HOW TO TRACK */
+.faq-container{
+background-color: #fff;
+}
+
+.question{
+padding: 10px 40px;
+font-size: 20px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.question p {
+    font-size: 17px;
+font-family: sans-serif
+}
+
+.question button{
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(166, 233, 9);
+    border: none;
+} 
+
+.safe-places{
+list-style: none;
+
+}
+
+.safe-places li::before{
+content: "\2022";
+color: rgb(166, 233, 9);
+font-weight: bolder;
+display: inline-block;
+width: 1rem;
+margin-left: -1rem;
+}
+
+
+
+            /* CONTACT US */
+.contactUs-container{
+background-color: #03021b;
+margin-top: 60px;
+}
+
+.contact-box{
+display: flex;
+justify-content: space-around;
+
+}
+
+.contact-ul{
+color: white;
+list-style: none;
+font-family: sans-serif;
+font-size: 14px;
+
+}
+
+.contact-ul li{
+margin-top: 15px;
+}
+
+.about-us-top{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 0 20px;
+}
+
+.footer-box{
+display: flex;
+flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footer p{
+    display: flex;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 90px;
+    color: #fff;
+}
+
+.footer-p1{
+width: 15%;
+font-weight: 700; 
+}
+
+.copy-right-p{
+    text-align: right;
+    padding: 20px;
+    font-size: 13px;
+    color: #fff;
+}
