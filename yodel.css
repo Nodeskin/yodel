@@ -1,10 +1,12 @@
+@font-face {
+  font-family: robotoRegular;
+  src: url("./Roboto/Roboto-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
+  font-family: robotoRegular;
 }
-
-.main-container {
-}
-
 /* NAV1 */
 
 .nav1-container {
@@ -28,7 +30,6 @@
   list-style: none;
   font-size: 15px;
   font-weight: 600;
-  font-family: sans-serif;
   color: white;
 }
 
@@ -69,7 +70,6 @@
 .top-right-nav2 {
   margin-right: 12px;
   font-size: 17px;
-  font-family: sans-serif;
 }
 
 .fa-li {
@@ -114,6 +114,9 @@
   filter: brightness(65%);
   z-index: -1;
 }
+input{
+  outline: none;
+}
 
 .pg1-container {
   display: flex;
@@ -151,6 +154,8 @@
 
 .pg1-input-wrap input:nth-child(3) {
   background-color: rgb(166, 233, 9);
+
+  border: 1px solid rgb(166, 233, 9);
 }
 
 .pg1-inputs-b {
@@ -160,20 +165,23 @@
   font-size: 14px;
   width: 28%;
   font-weight: 900;
+  border: 1px solid rgb(36, 33, 33);
+}
+.pg1-inputs-b::placeholder{
+  color: white;
 }
 
-/* ABOUT YODEL */
+            /* ABOUT YODEL */
 .about-container {
   background-color: rgb(241, 241, 234);
   margin-top: 100px;
   width: 100%;
 }
 
-.about-container h2 {
-  font-size: 40px;
-  font-family: serif;
-  text-align: center;
-  padding: 30px 0;
+.about-container h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
 }
 
 .about-yodel {
@@ -208,24 +216,30 @@
   background-color: #fff;
 }
 
-.question {
-  padding: 10px 40px;
-  font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.question{
+padding: 10px 40px;
+font-size: 20px;
 }
 
 .question p {
-  font-size: 17px;
-  font-family: sans-serif;
+    font-size: 17px;
+  line-height: 1.8;
 }
 
-.question button {
-  padding: 20px 30px;
-  font-size: 15px;
-  font-weight: 600;
-  background-color: rgb(166, 233, 9);
-  border: none;
+.question button{
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(166, 233, 9);
+    border: none;
+} 
+
+.safe-places{
+list-style-type: none;
+}
+.safe-places li{
+font-size: 17px;
+margin-bottom: 5px;
 }
 
 .safe-places {
@@ -247,9 +261,11 @@
   margin-top: 60px;
 }
 
-.contact-box {
-  display: flex;
-  justify-content: space-around;
+.contact-ul{
+color: white;
+list-style: none;
+font-size: 14px;
+
 }
 
 .contact-ul {
@@ -279,12 +295,11 @@
   flex-direction: row;
 }
 
-.footer p {
-  display: flex;
-  font-size: 13px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 90px;
-  color: #fff;
+.footer p{
+    display: flex;
+    font-size: 13px;
+    margin-left: 90px;
+    color: #fff;
 }
 
 .footer-p1 {
