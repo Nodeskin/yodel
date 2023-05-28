@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="yodel.css" />
+    <title>YodelTrack</title>
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -33,22 +33,17 @@
       <!-- TOP NAV 2 -->
       <nav class="nav2-container">
         <img
-          src="./yodel-logo2.jpg"
+          src="./images/yodel-logo2.jpg"
           alt="logo"
-          style="
-            width: 160px;
-            height: 60px;
-            margin-left: 30px;
-            object-fit: cover;
-          "
         />
         <div class="top-right-nav2">
           <ul class="nav2-right">
             <li class="top-right-nav2 line">Send </li>
-            <li class="top-right-nav2" style="border-bottom: 4px solid lime">
-              Track
+            <li class="top-right-nav2-border">
+              Track 
             </li>
-            <li class="top-right-nav2 line">Return</li>
+            <li class="top-right-nav2 line"> 
+              &nbsp Return</li>
             <span>|</span>
             <li class="top-right-nav2 line">Store Locator</li>
             <li class="top-right-nav2 line">Yodel Services</li>
@@ -61,33 +56,34 @@
       </nav>
 
       <!-- TRACKING DETAILS -->
-      <div class="pg1-container">
-        <div class="background-image"></div>
-        <h1>Track your parcel</h1>
-        <p>Keep track of your parcel at all times</p>
-        <div class="pg1-input-box">
-          <p>Got a parcel you want to track?</p>
-          <div class="sub-pg1-input">
-            <div class="pg1-input-wrap">
-              <input
-                class="pg1-inputs"
-                type="text"
-                placeholder="Tracking number"
-              />
-              <input
-                class="pg1-inputs"
-                type="text"
-                placeholder="Delivery postcode"
-              />
-              <input class="pg1-inputs" type="button" value="Track" />
+      <div class="background-image">
+          <div class="pg1-container">
+            <h1>Track your parcel</h1>
+            <p>Keep track of your parcel at all times</p>
+            <div class="pg1-input-box">
+              <p>Got a parcel you want to track?</p>
+              <div class="sub-pg1-input">
+                <div class="pg1-input-wrap">
+                  <input
+                    class="pg1-inputs"
+                    type="text"
+                    placeholder="Tracking number"
+                  />
+                  <input
+                    class="pg1-inputs"
+                    type="text"
+                    placeholder="Delivery postcode"
+                  />
+                  <input class="pg1-inputs" type="button" value="Track" />
+                </div>
+                <input
+                  class="pg1-inputs-b"
+                  placeholder="+ Find your tracking number"
+                />
+              </div>
             </div>
-            <input
-              class="pg1-inputs-b"
-              placeholder="+ Find your tracking number"
-            />
-          </div>
         </div>
-      </div>
+    
 
       <!-- ABOUT YODEL -->
       <div class="about-container">
@@ -229,66 +225,63 @@
       <!-- CONTACT US -->
 
       <div class="contactUs-container">
-        <div class="contact-box">
-          <ul class="contact-ul">
-            <li class="about-us-top">About Yodel</li>
-            <li class="about-us">About us</li>
-            <li class="about-us">News</li>
-            <li class="about-us">Testimonials</li>
-            <li class="about-us">Careers</li>
-            <li class="about-us">Yodel Thinking</li>
-            <li class="about-us">In the Driving Seat</li>
-            <li class="about-us">Client Zone</li>
-          </ul>
-
-          <ul class="contact-ul">
-            <li class="about-us-top">Our Service</li>
-            <li class="about-us">Help</li>
-            <li class="about-us">Contact us</li>
-            <li class="about-us">Download the Yodel app</li>
-            <li class="about-us">Yodel Service</li>
-            <li class="about-us">Prohibited & Restricted items</li>
-          </ul>
-
+          <div class="contact-box">
             <ul class="contact-ul">
-              <li class="about-us-top">Our Policies</li>
-              <li class="about-us">CSR</li>
-              <li class="about-us">Supplier Code of Ethics</li>
-              <li class="about-us">HSEQPolicy Statement</li>
-              <li class="about-us">Modern Slavery Act statement</li>
-              <li class="about-us">Gender Pay Gap Report</li>
-              <li class="about-us">Tax Strategy</li>
-              <li class="about-us">Whistleblowing</li>
-              <li class="about-us">Terms & Condition</li>
-              <li class="about-us">Privacy & Cookies Policy</li>
-              <li class="about-us">Accessibility</li>
+              <li class="about-us-top">About Yodel</li>
+              <li class="about-us">About us</li>
+              <li class="about-us">News</li>
+              <li class="about-us">Testimonials</li>
+              <li class="about-us">Careers</li>
+              <li class="about-us">Yodel Thinking</li>
+              <li class="about-us">In the Driving Seat</li>
+              <li class="about-us">Client Zone</li>
             </ul>
-
             <ul class="contact-ul">
-              <li class="about-us-top">Follow us</li>
-              <li class="about-us"></li>
-              <li class="about-us"></li>
+              <li class="about-us-top">Our Service</li>
+              <li class="about-us">Help</li>
+              <li class="about-us">Contact us</li>
+              <li class="about-us">Download the Yodel app</li>
+              <li class="about-us">Yodel Service</li>
+              <li class="about-us">Prohibited & Restricted items</li>
             </ul>
-
-          </div>
-          <div class="footer-box">
-            <div class="footer">
-              <p class="footer-p1">Registered number : </p>
-              <p>05200072-Registered in England & Wales</p>
+              <ul class="contact-ul">
+                <li class="about-us-top">Our Policies</li>
+                <li class="about-us">CSR</li>
+                <li class="about-us">Supplier Code of Ethics</li>
+                <li class="about-us">HSEQPolicy Statement</li>
+                <li class="about-us">Modern Slavery Act statement</li>
+                <li class="about-us">Gender Pay Gap Report</li>
+                <li class="about-us">Tax Strategy</li>
+                <li class="about-us">Whistleblowing</li>
+                <li class="about-us">Terms & Condition</li>
+                <li class="about-us">Privacy & Cookies Policy</li>
+                <li class="about-us">Accessibility</li>
+              </ul>
+              <ul class="contact-ul">
+                <li class="about-us-top">Follow us</li>
+                <li class="about-us"></li>
+                <li class="about-us"></li>
+              </ul>
+              <div class="footer-box">
+                <div class="footer">
+                  <p class="footer-p1">Registered number : </p>
+                  <p>05200072-Registered in England & Wales</p>
+                </div>
+                <div class="footer">
+                  <p class="footer-p1" >Registered address :</p>
+                  <p>Yodel Delivery Network Limited, 2nd Floor, Skyways Hub, Skyways Hub, Speke, Liverpool L70 1AB</p>
+                </div>
+                <div class="footer">
+                  <p class="footer-p1">VAT Number : </p>
+                  <p >413903714</p>
+                </div>
+                <div class="copy-right-p">
+                  <p>&copy;2023 Yodel Delivery Network Limited</p>
+                </div>
+              </div>
             </div>
-            <div class="footer">
-              <p class="footer-p1" >Registered address :</p>
-              <p>Yodel Delivery Network Limited, 2nd Floor, Skyways Hub, Skyways Hub, Speke, Liverpool L70 1AB</p>
-            </div>
-            <div class="footer">
-              <p class="footer-p1">VAT Number : </p>
-              <p >413903714</p>
-            </div>
-          </div>
-            <p class="copy-right-p">&copy;2023 Yodel Delivery Network Limited</p>
         </div>
-                  <!-- footer -->
+  
       </div>
-    </div>
   </body>
 </html>

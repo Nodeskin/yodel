@@ -72,6 +72,10 @@
   font-size: 17px;
 }
 
+.top-right-nav2-border {
+  border-bottom: 4px solid lime;
+}
+
 .fa-li {
   position: unset !important;
 }
@@ -103,18 +107,15 @@
 /* TRACKING DETAILS  */
 
 .background-image {
-  background-image: url("./yodel_background.jpg");
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  background-image: url("./images/yodel_background.jpg");
+  height: 500px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(65%);
   z-index: -1;
 }
-input{
+input {
   outline: none;
 }
 
@@ -123,12 +124,12 @@ input{
   flex-direction: column;
   align-items: center;
   color: white;
-  margin-top: 200px;
+  margin-top: 140px;
 }
 
 .pg1-container h1 {
   font-size: 80px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 0;
   text-align: center;
 }
@@ -162,26 +163,26 @@ input{
   background-color: rgb(36, 33, 33);
   color: white;
   padding: 15px 10px;
-  font-size: 15px;
+  font-size: 14px;
   width: 28%;
   font-weight: 900;
   border: 1px solid rgb(36, 33, 33);
 }
-.pg1-inputs-b::placeholder{
+.pg1-inputs-b::placeholder {
   color: white;
 }
 
-            /* ABOUT YODEL */
+/* ABOUT YODEL */
 .about-container {
   background-color: rgb(241, 241, 234);
-  margin-top: 100px;
+  margin-top: 250px;
   width: 100%;
 }
 
-.about-container h2{
-    font-size: 40px;
-    text-align: center;
-    padding: 30px 0;
+.about-container h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .about-yodel {
@@ -199,12 +200,9 @@ input{
   font-size: 18px;
   padding: 25px;
   color: white;
-  background-color: #0D2D6C;
+  background-color: #0d2d6c;
 }
-.yodel-info p {
-font-size: 17px;
-line-height: 1.7;
-}
+
 .yodel-info button {
   width: 80%;
   padding: 18px;
@@ -219,30 +217,30 @@ line-height: 1.7;
   background-color: #fff;
 }
 
-.question{
-padding: 10px 40px;
-font-size: 20px;
+.question {
+  padding: 10px 40px;
+  font-size: 20px;
 }
 
 .question p {
-    font-size: 17px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
-.question button{
-    padding: 20px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: rgb(166, 233, 9);
-    border: none;
-} 
-
-.safe-places{
-list-style-type: none;
+.question button {
+  padding: 20px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(166, 233, 9);
+  border: none;
 }
-.safe-places li{
-font-size: 17px;
-margin-bottom: 5px;
+
+.safe-places {
+  list-style-type: none;
+}
+.safe-places li {
+  font-size: 17px;
+  margin-bottom: 5px;
 }
 
 .safe-places {
@@ -264,12 +262,6 @@ margin-bottom: 5px;
   margin-top: 60px;
 }
 
-.contact-ul{
-color: white;
-list-style: none;
-font-size: 14px;
-
-}
 
 .contact-ul {
   color: white;
@@ -298,11 +290,11 @@ font-size: 14px;
   flex-direction: row;
 }
 
-.footer p{
-    display: flex;
-    font-size: 13px;
-    margin-left: 90px;
-    color: #fff;
+.footer p {
+  display: flex;
+  font-size: 13px;
+  margin-left: 40px;
+  color: #fff;
 }
 
 .footer-p1 {
@@ -316,7 +308,144 @@ font-size: 14px;
   font-size: 13px;
   color: #fff;
 }
-.contact-box{
-  display: flex;
-  justify-content: space-around;
+
+/* @mediaQuerry MOBILE */
+
+@media screen and (max-width: 550px) {
+  .person-ul {
+    padding: 0;
+  }
+
+  .nav2-container {
+    margin: 15px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav2-container img {
+    width: 120px;
+    height: 60px;
+    margin-left: 0;
+    margin-right: 10px;
+    object-fit: cover;
+
+  }
+
+  .nav2-right {
+    
+    flex-wrap: wrap;
+  }
+
+  .nav2-right li {
+    border-bottom: 1px solid lime;
+    margin-right: 13px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .top-right-nav2 span {
+    display: none;
+  }
+  .top-right-nav2-border {
+    border-bottom: none;
+    margin-right: 10px;
+  }
+
+  .pg1-container h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  .pg1-container {
+    margin-top: 140px;
+  }
+
+  .pg1-input-box {
+    width: 90%;
+  }
+
+  .pg1-input-box p {
+    color: rgb(166, 233, 9);
+    text-align: center;
+  }
+
+  .pg1-inputs {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .pg1-inputs-b {
+    width: 60%;
+  }
+
+  .pg1-input-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .background-image {
+    background-image: url("./images/yodel_background.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(65%);
+    z-index: -1;
+
+  }
+
+  .about-container{
+    margin: 120px 0;
+  }
+
+.about-yodel{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
+.yodel-info{
+  width: 95%;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.about-container h2{
+  font-size: 33px;
+  color: rgb(112, 31, 31);
+}
+
+.QandA{
+padding: 0 10px;
+}
+
+.question{
+  padding: 5px;
+}
+
+
+.contactUs-container{
+  display: flex;
+flex-direction: column;
+
+}
+
+}
+
+
+      /* @mediaQuerry Ipad */
+    @media screen and (max-width: 850px) {
+.yodel-info{
+  height: 370px;
+
+}
+
+ }
